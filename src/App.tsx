@@ -1,17 +1,19 @@
-import Header from "./components/Header"
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Header from "./components/Header";
 import Home from "./pages/Home";
-import AboutMe from "./pages/AboutMe"
-import Skills from "./pages/Skills"
-import { useEffect } from "react"
+import AboutMe from "./pages/AboutMe";
+import Skills from "./pages/Skills";
+import Projects from "./pages/Projects";
+import ProjectDetail from "./pages/ProjectDetail"; 
+import { useEffect } from "react";
 
-function App() {
+// Component chứa nội dung trang chủ cũ
+const MainPage = () => {
   useEffect(() => {
-    // Kiểm tra xem URL có chứa hash (#) không
     if (window.location.hash) {
-      const id = window.location.hash.substring(1); // Lấy chữ 'about'
+      const id = window.location.hash.substring(1);
       const element = document.getElementById(id);
       if (element) {
-        // Đợi một chút để component render xong rồi mới cuộn
         setTimeout(() => {
           element.scrollIntoView({ behavior: 'smooth' });
         }, 100);
@@ -20,13 +22,30 @@ function App() {
   }, []);
 
   return (
-    <div className="bg-[#0f172a] text-white">
-      <Header/> 
-      <Home/>
-      <AboutMe/>
-      <Skills/>
-    </div>
-  )
+    <>
+      <Header />
+      <Home />
+      <AboutMe />
+      <Skills />
+      <Projects />
+    </>
+  );
+};
+
+function App() {
+  return (
+    <BrowserRouter>
+      <div className="bg-[#0f172a] text-white">
+        <Routes>
+          {/* Đường dẫn trang chủ */}
+          <Route path="/" element={<MainPage />} />
+          
+          {/* Đường dẫn trang chi tiết */}
+          <Route path="/project/:id" element={<ProjectDetail />} />
+        </Routes>
+      </div>
+    </BrowserRouter>
+  );
 }
 
-export default App
+export default App;
