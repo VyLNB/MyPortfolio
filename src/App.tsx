@@ -4,7 +4,8 @@ import Home from "./pages/Home";
 import AboutMe from "./pages/AboutMe";
 import Skills from "./pages/Skills";
 import Projects from "./pages/Projects";
-import ProjectDetail from "./pages/ProjectDetail"; 
+import ProjectDetail from "./pages/ProjectDetail";
+import Footer from "./components/Footer"; 
 import { useEffect } from "react";
 
 // Component chứa nội dung trang chủ cũ
@@ -28,6 +29,7 @@ const MainPage = () => {
       <AboutMe />
       <Skills />
       <Projects />
+      <Footer/>
     </>
   );
 };

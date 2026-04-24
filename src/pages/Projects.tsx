@@ -21,8 +21,9 @@ const Projects = () => {
                                 <ProjectCard
                                     id={project.id}
                                     title={project.title}
+                                    type={project.type || "Unknown"}
                                     description={project.description}
-                                    imageUrl={project.imageUrl}
+                                    techStack={project.techStack || []}
                                 />
                             </div>
                         </div>

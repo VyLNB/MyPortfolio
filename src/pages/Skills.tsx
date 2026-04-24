@@ -1,5 +1,5 @@
 import SkillCard from "../components/SkillCard";
-import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaNodeJs, FaGitAlt, FaDocker } from "react-icons/fa";
+import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaNodeJs, FaGitAlt } from "react-icons/fa";
 import { SiTailwindcss, SiMongodb, SiPostman, SiExpress, SiJira } from "react-icons/si";
 import { BiNetworkChart } from "react-icons/bi"; 
 
@@ -13,7 +13,6 @@ const Skills = () => {
         { name: "JavaScript (ES6+)", icon: <FaJs />, color: "text-yellow-400" },
         { name: "ReactJS & Vite", icon: <FaReact />, color: "text-cyan-400" },
         { name: "Tailwind CSS", icon: <SiTailwindcss />, color: "text-sky-400" },
-        { name: "React Native", icon: <FaReact />, color: "text-blue-500" },
         { name: "Bootstrap", icon: <FaCss3Alt />, color: "text-purple-600" },
       ],
     },
@@ -21,7 +20,7 @@ const Skills = () => {
       title: "BACKEND & DATA",
       items: [
         { name: "Node.js", icon: <FaNodeJs />, color: "text-green-500" },
-        { name: "Express.js", icon: <SiExpress />, color: "text-gray-300" }, // Express thường màu trắng/đen
+        { name: "Express.js", icon: <SiExpress />, color: "text-gray-300" },
         { name: "MongoDB", icon: <SiMongodb />, color: "text-green-400" },
         { name: "SQL Server", icon: <BiNetworkChart />, color: "text-blue-600" },
       ],
@@ -30,7 +29,6 @@ const Skills = () => {
       title: "TOOLS",
       items: [
         { name: "Git & GitHub", icon: <FaGitAlt />, color: "text-red-500" },
-        { name: "Docker", icon: <FaDocker />, color: "text-blue-400" },
         { name: "Postman", icon: <SiPostman />, color: "text-orange-500" },
         { name: "Jira", icon: <SiJira />, color: "text-blue-700" },
       ],
