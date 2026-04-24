@@ -1,4 +1,5 @@
 import { motion, type Variants } from 'framer-motion';
+import img from "../assets/images/me.png"
 
 const Home = () => {
   const containerVariants: Variants = {
@@ -45,7 +46,7 @@ const Home = () => {
             <div className="absolute -inset-1 bg-cyan-500/20 rounded-2xl blur-xl"></div>
             <div className="relative rounded-2xl border border-slate-700 overflow-hidden shadow-2xl group">
               <img
-                src="src/assets/images/me.png"
+                src={img}
                 alt="Portrait"
                 className="w-full h-auto object-cover aspect-[4/5] transition-transform duration-500 group-hover:scale-105"
               />
