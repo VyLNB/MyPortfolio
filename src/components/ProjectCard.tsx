@@ -5,11 +5,12 @@ interface ProjectCardProps {
     id: string;
     title: string;
     type: string;
-    description: string;
+    description?: string;
+    summary?: string;
     techStack: string[];
 }
 
-const ProjectCard = ({ id, title, type, description, techStack }: ProjectCardProps) => {
+const ProjectCard = ({ id, title, type, description, summary, techStack }: ProjectCardProps) => {
     return (
         <div className="bg-[#0f172a] rounded-lg overflow-hidden shadow-lg">
             <div className="p-4">
@@ -27,7 +28,7 @@ const ProjectCard = ({ id, title, type, description, techStack }: ProjectCardPro
                     </span>
                 </div>
 
-                <p className="text-gray-300 line-clamp-3 whitespace-pre-line">{description}</p>
+                <p className="text-gray-300 line-clamp-3 whitespace-pre-line">{summary || description}</p>
                 <div className="flex flex-wrap gap-2 mt-4">
                     {techStack.map((tech) => (
                         <span key={tech} className="bg-blue-400 text-white px-2 py-1 rounded-lg text-xs">

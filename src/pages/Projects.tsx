@@ -1,10 +1,10 @@
 import ProjectCard from "../components/ProjectCard";
-import { projects } from "../data/projects"; 
+import { projects } from "../data/projects";
 
 const Projects = () => {
-    
+
     return (
-        <section id="projects" className="bg-[#020617] text-white min-h-screen flex items-center px-6 md:px-20 pt-28">
+        <section id="projects" className="bg-[#020617] text-white min-h-screen py-20 px-6 md:px-20 flex justify-center items-center">
             <div className="max-w-6xl w-full">
                 <div className="flex items-center mb-12">
                     <div className="h-8 w-1 bg-blue-500 mr-4 rounded-full shadow-[0_0_10px_#3b82f6]"></div>
@@ -14,8 +14,7 @@ const Projects = () => {
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                    {/* Map qua projectsData */}
-                    {projects.map((project, index) => (    
+                    {projects.map((project, index) => (
                         <div key={index} className="flex flex-col gap-6">
                             <div className="flex flex-col gap-4">
                                 <ProjectCard
@@ -23,6 +22,7 @@ const Projects = () => {
                                     title={project.title}
                                     type={project.type || "Unknown"}
                                     description={project.description}
+                                    summary={project.summary}
                                     techStack={project.techStack || []}
                                 />
                             </div>

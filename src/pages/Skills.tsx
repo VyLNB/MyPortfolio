@@ -1,10 +1,9 @@
 import SkillCard from "../components/SkillCard";
 import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaNodeJs, FaGitAlt } from "react-icons/fa";
 import { SiTailwindcss, SiMongodb, SiPostman, SiExpress, SiJira } from "react-icons/si";
-import { BiNetworkChart } from "react-icons/bi"; 
+import { BiNetworkChart } from "react-icons/bi";
 
 const Skills = () => {
-  // Cấu trúc dữ liệu kèm Icon và màu đặc trưng (Brand Colors)
   const skillCategories = [
     {
       title: "FRONTEND",
@@ -38,7 +37,7 @@ const Skills = () => {
   return (
     <section id="skills" className="bg-[#0f172a] text-white min-h-screen py-20 px-6 md:px-20 flex justify-center items-center">
       <div className="max-w-7xl w-full">
-        
+
         {/* Header Section */}
         <div className="flex items-center mb-12">
           <div className="h-8 w-1 bg-blue-500 mr-4 rounded-full shadow-[0_0_10px_#3b82f6]"></div>
@@ -49,7 +48,7 @@ const Skills = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {skillCategories.map((category, index) => (
             <div key={index} className="flex flex-col gap-6">
-              
+
               {/* Category Title */}
               <h3 className="text-gray-400 font-bold tracking-widest uppercase text-xs border-b border-gray-700 pb-2">
                 {category.title}
@@ -58,9 +57,9 @@ const Skills = () => {
               {/* Items List */}
               <div className="flex flex-col gap-4">
                 {category.items.map((skill, idx) => (
-                  <SkillCard 
-                    key={idx} 
-                    name={skill.name} 
+                  <SkillCard
+                    key={idx}
+                    name={skill.name}
                     icon={skill.icon}
                     color={skill.color}
                   />
