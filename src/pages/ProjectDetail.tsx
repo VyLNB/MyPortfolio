@@ -73,14 +73,7 @@ const ProjectDetail = () => {
         )}
 
         <div className="bg-[#1e293b]/50 p-8 rounded-2xl border border-slate-700 backdrop-blur-sm">
-          {project.description && (
-            <>
-              <h3 className="text-2xl font-semibold mb-4 text-white">Mô tả chi tiết</h3>
-              <p className="text-gray-300 leading-loose text-lg whitespace-pre-line">
-                {project.description}
-              </p>
-            </>
-          )}
+
 
           {project.overview && (
             <>

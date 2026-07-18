@@ -21,7 +21,6 @@ const Projects = () => {
                                     id={project.id}
                                     title={project.title}
                                     type={project.type || "Unknown"}
-                                    description={project.description}
                                     summary={project.summary}
                                     techStack={project.techStack || []}
                                 />
