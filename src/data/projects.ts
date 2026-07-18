@@ -61,15 +61,62 @@ export const projects = [
             "Thiết kế giao diện responsive và tối ưu trải nghiệm người dùng",
         ],
         linkGithub: "https://github.com/VyLNB/E-Commerce-NodeJS"
-        // linkDemo: "https://e-commerce-website-d2c08.web.app/"
     },
     {
         id: "3",
         title: "Task Manager",
         type: "Full-stack",
         techStack: ["ReactJS", "TypeScript", "Tailwind CSS", "Postman", "NodeJS (ExpressJS)", "MongoDB", "Kanban"],
-        description: "Ứng dụng quản lý công việc cá nhân cho phép người dùng theo dõi và quản lý công việc một cách hiệu quả. Với giao diện trực quan và dễ sử dụng, ứng dụng hỗ trợ tạo, cập nhật, xóa và phân loại công việc, giúp người dùng sắp xếp công việc hàng ngày một cách khoa học.",
+        summary: `Dự án này tập trung vào việc hợp lý hóa quá trình theo dõi dự án, cộng tác nhóm và phê duyệt bảng chấm công (timesheet) 
+                thông qua một giao diện người dùng trực quan, sử dụng phong cách thiết kế Glassmorphism.`,
+        overview: `Dự án Task Manager là một nền tảng quản lý công việc và thời gian full-stack hiện đại. 
+                    Dự án được xây dựng nhằm mục đích theo dõi tiến độ dự án, quản lý không gian làm việc, 
+                    và tối ưu hóa quy trình phê duyệt bảng chấm công với hệ thống phân quyền (RBAC) chi tiết.`,
+        keyFeatures: [
+            "Hệ thống xác thực bảo mật với JWT và phân quyền vai trò (RBAC)",
+            "Quản lý Workspaces, dự án và phân công thành viên",
+            "Bảng Kanban tương tác hỗ trợ kéo thả quản lý trạng thái công việc",
+            "Quản lý công việc chi tiết (ưu tiên, tags, hạn chót, subtasks)",
+            "Hệ thống ghi nhận thời gian làm việc (Time Tracking) và bảng chấm công",
+            "Quy trình duyệt bảng chấm công theo phân cấp",
+            "Admin Dashboard phân tích dữ liệu thời gian thực và quản lý nhân sự",
+            "Giao diện hiện đại theo phong cách Glassmorphism và tối ưu hóa UX (Optimistic UI)"
+        ],
+        myResponsibilities: [
+            "Thiết kế kiến trúc hệ thống và cơ sở dữ liệu MongoDB",
+            "Xây dựng RESTful API với NodeJS, ExpressJS tích hợp bảo mật JWT",
+            "Xử lý dữ liệu phức tạp thống kê bằng Mongoose Aggregation Pipelines",
+            "Phát triển giao diện React, TypeScript kết hợp TailwindCSS",
+            "Tích hợp tính năng kéo thả (Drag and Drop) cho bảng Kanban",
+            "Tối ưu trải nghiệm người dùng (UX) và đồng bộ hóa dữ liệu (Optimistic UI)"
+        ],
         linkGithub: "https://github.com/VyLNB/Task-Manager"
-        // linkDemo: "https://e-commerce-website-d2c08.web.app/"
+    },
+    {
+        id: "4",
+        title: "Grocery Store Management",
+        type: "Full-stack",
+        techStack: ["ReactJS", "TypeScript", "Java 25", "Spring Boot", "MySQL", "Spring Security", "JWT", "Hibernate"],
+        summary: `Dự án phần mềm quản lý cửa hàng tạp hóa cung cấp hệ thống POS (Point of Sale) và các API RESTful 
+                giúp quản lý sản phẩm, đơn hàng và hệ thống xác thực người dùng an toàn.`,
+        overview: `Ứng dụng là một hệ thống quản lý cửa hàng tạp hóa toàn diện thiết kế theo mô hình MVC. 
+                    Dự án cung cấp frontend POS hỗ trợ bán hàng tại quầy, kết hợp với backend mạnh mẽ 
+                    bằng Spring Boot để xử lý sản phẩm, danh mục, đơn hàng và đảm bảo bảo mật bằng Spring Security & JWT.`,
+        keyFeatures: [
+            "Hệ thống POS (Point of Sale) giao diện bán hàng tại quầy và thanh toán trực tiếp",
+            "Xác thực và phân quyền an toàn với JWT và hỗ trợ Refresh Token",
+            "Quản lý Sản phẩm và Danh mục hàng hóa chuyên sâu",
+            "Quản lý Đơn hàng (Order) và chi tiết các mặt hàng (Order Items)",
+            "Thiết kế API RESTful chuẩn theo mô hình Layered Architecture (Controller-Service-Repository)",
+            "Sử dụng Data Transfer Object (DTO) pattern để trao đổi dữ liệu client-server"
+        ],
+        myResponsibilities: [
+            "Xây dựng giao diện frontend POS bằng ReactJS, TypeScript và Vite",
+            "Phát triển RESTful API và logic nghiệp vụ bằng Java Spring Boot",
+            "Thiết kế cơ sở dữ liệu MySQL thông qua Spring Data JPA và Hibernate",
+            "Triển khai hệ thống bảo mật ứng dụng với Spring Security và JWT",
+            "Tối ưu hóa kiến trúc dự án và quy trình trao đổi dữ liệu an toàn"
+        ],
+        linkGithub: "https://github.com/VyLNB/grocery-store-management"
     }
 ]
